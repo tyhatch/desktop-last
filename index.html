@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+
+NOTE: This is intended for those who are taking the One Web approach with no server side intervention. For a typical mobile implementation, you'll probably want/need device detection assistance from the server to provide the right css/js assets along with your content in the appropriate layout.
+
+-->
+
+<!-- If you really hate IE use this ;) -->
+<!--[if IE]>
+    <meta http-equiv="refresh" content="0;url=http://cl.ly/9Xcd"/>
+< ![endif]-->
+
+<!-- Otherwise... -->
+<!--[if IE 7 ]><html lang="en" class="no-js ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="imagetoolbar" content="no">
+
+	<!-- turn off scaling for mobile viewing. -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
+	<!--
+	iPhone specific meta tags controlling appearance.
+	http://j.mp/AppleWebAppConfig
+	-->
+	<!--  enable full-screen mode on iPhone -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!--  controls the appearance of the status bar in full-screen mode in iPhone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+
+	<title>Page Title</title>
+
+	<!-- keyword and description -->
+	<meta name="Description" content="">
+	<meta name="Keywords" content="">
+
+	<!-- author and copyright meta -->
+	<meta name="author" content="Author Name">
+	<meta name="copyright" content="Copyright [YYYY] [somebody]. [This could be Creative Commons, GPL , MIT or...]">
+
+	<!-- rating -->
+	<meta name="Rating" content="General">
+	
+	<!-- bot instructions -->
+	<meta name="Robots" content="All">
+	<meta name="Robots" content="Index, Follow">
+	<meta name="Robots" content="NOODP">
+	<meta name="Googlebot" content="NOODP">
+	<meta name="Googlebot" content="Index, Follow">
+	
+	<!-- favicon -->
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/css/basic.css">
+	<link rel="stylesheet" type="text/css" href="styles/css/mobile.css" media="(min-device-width: 320px)" />
+	<link rel="stylesheet" type="text/css" href="styles/css/tablet.css" media="(min-device-width: 768px)" />
+	<link rel="stylesheet" type="text/css" href="styles/css/desktop.css" media="(min-device-width: 1024px)" />
+
+	<!-- CSS for IE 7 and 8 since they don't understand @media. Stupid browsers... -->
+	<!--[if lt IE 9 ]>
+	<link rel="stylesheet" type="text/css" href="styles/css/mobile.css"" />	
+	<link rel="stylesheet" type="text/css" href="styles/css/tablet.css"" />	
+	<link rel="stylesheet" type="text/css" href="styles/css/desktop.css"" />	
+	<![endif]-->
+
+	<!-- Modernizr - All other JS at bottom -->
+	<!-- The benefit of using Modernizr is that it provides support for things like HTML5 and ARIA, among others. http://modernizr.com -->
+	<script src="scripts/modernizr-2.0.6.all.js"></script>
+
+</head>
+
+<body id="top-nav-dropdown">
+
+<!-- 
+
+NOTE: There's still the need to swap out properly optimized images based on device resolution. You might want to look at http://src.sencha.io or http://t.co/dzDeHm9d (Responsive Images)
+
+-->
+
+<!-- 
+Use ARIA landmark roles for indicating primary content sections. Use .class over #id except for in forms. 
+--> 
+<header>
+	<h1 role="banner"><a href="#">Company Name</a></h1><!-- End banner -->
+	
+	<ul role="navigation">
+		<li class="active"><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+	</ul><!-- End navigation -->
+</header>
+
+<section role="main">
+	<h1>Content header</h1>
+	<p>Sample paragraph with a <a href="#">link</a>.</p>
+	
+	<!-- Use "tel" if you're publishing a phone number. Meant for mobile. -->
+	<p>Call us at <a href="tel:18005555555">1-800-555-5555</a></p>
+
+	<!-- Use "sms" if you're sending text message. Specific to mobile. -->
+	<p>Text to <a href="sms:18005555555">1-800-555-5555</a></p>
+</section><!-- End main -->
+
+<footer role="contentinfo">
+	<p>Something pithy about who can owns what's on the page.</p>
+</footer><!-- End contentinfo -->
+
+</body>
+</html>

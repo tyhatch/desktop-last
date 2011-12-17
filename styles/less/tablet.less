@@ -1,0 +1,54 @@
+@import url("-colors.less");
+
+body { background: orange; }
+
+/*@group [role="banner"]*/
+[role="banner"] { 
+	h1 { display: block; float: left;
+		a { display: block; }
+	}
+}
+/*@end [role="banner"]*/
+
+
+/*@group [role="navigation"]*/
+[role="navigation"] { 
+
+	li { 
+		&:first-child { }
+		&:hover { }
+
+		> a { color: @nav-link; 
+			&:hover,
+			&:focus { background: none; color: @nav-link-hover; }
+			&:active { color: @nav-link-active; }
+		}
+
+		&.active { }
+		&.active > a { 
+			&:hover,
+			&:focus { }
+			&:active { }
+		 }
+	}
+}
+/*@end [role="navigation"]*/
+
+/*@group [role="main"]*/
+[role="main"] { }
+/*@end basic [role="main"]*/
+
+/*@group contentinfo*/
+[role="contentinfo"] { }
+/*@end contentinfo*/
+
+
+/*@group minor breakpoint: 768px*/
+/* iPad (P), some Android tablets (P)  */ 
+/*
+@media only screen and (min-device-width:768px) {
+
+}
+*/
+/*@end minor breakpoint: 768px*/
+
