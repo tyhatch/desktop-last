@@ -47,7 +47,7 @@ Modernizr.load([
 	},
 
 	// load common js
-	'scripts/wcs-common.js',
+	'scripts/common.js',
 
 ]);
 
