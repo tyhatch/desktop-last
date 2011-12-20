@@ -24,10 +24,12 @@ Modified: 12.03.2011 by Ty Hatch http://twitter.com/tyhatch
 
 .gradient(@color: @off-white, @start: @very-light-gray, @stop: @white) {
 	background: @color;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, @start), color-stop(0.8, @stop));
-	background: -ms-linear-gradient(top, @start, @stop);
 	background: -moz-linear-gradient(top, @start 0%, @stop 80%);
-	background-image: -o-linear-gradient(top, @start 0%, @stop 80%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0,@start), color-stop(0.8,@stop));
+	background: -webkit-linear-gradient(top, @start 0%,@stop 80%);
+	background: -o-linear-gradient(top, @start 0%,@stop 80%);
+	background: -ms-linear-gradient(top, @start 0%,@stop 80%);
+	background: linear-gradient(top, @start 0%,@stop 80%);
 }
 .box-shadow-rgba(@x-axis: 0, @y-axis: 1px, @blur: 1px, @color: fadeout(@black, 80%)) {
 	-webkit-box-shadow: @x-axis @y-axis @blur @color;
