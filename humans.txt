@@ -1,0 +1,17 @@
+﻿/* TEAM */
+	Crazy Man:Ty Hatch
+	Contact: tyhatch [at] gmail.com
+	Twitter: @tyhatch
+	From:Utah, USA
+
+/* THANKS */
+
+	Contributor: [Name]
+	Twitter: @twittername
+	From: City, State/Province, Country		
+
+/* SITE */
+	Last update:2012/02/04
+	Language:English
+	Doctype:HTML5
+	IDE: Coda, LESS.app, Illustrator
